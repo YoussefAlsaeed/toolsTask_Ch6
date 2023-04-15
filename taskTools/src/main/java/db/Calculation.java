@@ -10,18 +10,18 @@ import javax.persistence.*;
 
 public class Calculation {
 	
-   @Id
-   @GeneratedValue(strategy = GenerationType.IDENTITY)
-   private int id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
    
-   private int number1;
-   private int number2;
-   private String operation;
+    private int number1;
+    private int number2;
+    private String operation;
    
-   public Calculation()
-   {
+    public Calculation()
+    {
 
-   }
+    }
    
    
 	public int getNumber1() {
