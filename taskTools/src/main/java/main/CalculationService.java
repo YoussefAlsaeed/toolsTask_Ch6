@@ -38,25 +38,21 @@ public class CalculationService  {
 		
 		if(calc.getOperation().equals("+"))
 		{
-			calc.setOperation("+");
 			res = calc.getNumber1() + calc.getNumber2();
 			response = "Result: " + res;
 		}
 		else if(calc.getOperation().equals("-"))
 		{
-			calc.setOperation("-");
 			res = calc.getNumber1() - calc.getNumber2();
 			response = "Result: " + res;
 		}
 		else if(calc.getOperation().equals("*"))
 		{
-			calc.setOperation("*");
 			res = calc.getNumber1() * calc.getNumber2();
 			response = "Result: " + res;
 		}
 		else if(calc.getOperation().equals("/"))
 		{
-			calc.setOperation("/");
 			res = calc.getNumber1() / calc.getNumber2();
 			response = "Result: " + res;
 		}

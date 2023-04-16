@@ -22,8 +22,7 @@ public class Calculation {
     {
 
     }
-   
-   
+     
 	public int getNumber1() {
 		return number1;
 	}
