@@ -30,31 +30,31 @@ public class CalculationService  {
 	@POST
 	@Path("/calc")
 	@Consumes(MediaType.APPLICATION_JSON)
-	public String performCalculation(Calculation calc )
+	public Response performCalculation(Calculation calc )
 	{
+		Response response = new Response();
+		double res;
 		
-		String response = "Not supported operation";
-		int res;
 		
 		if(calc.getOperation().equals("+"))
 		{
 			res = calc.getNumber1() + calc.getNumber2();
-			response = "Result: " + res;
+			response.setResult(res);
 		}
 		else if(calc.getOperation().equals("-"))
 		{
 			res = calc.getNumber1() - calc.getNumber2();
-			response = "Result: " + res;
+			response.setResult(res);
 		}
 		else if(calc.getOperation().equals("*"))
 		{
 			res = calc.getNumber1() * calc.getNumber2();
-			response = "Result: " + res;
+			response.setResult(res);
 		}
 		else if(calc.getOperation().equals("/"))
 		{
 			res = calc.getNumber1() / calc.getNumber2();
-			response = "Result: " + res;
+			response.setResult(res);
 		}
 		
 		em.persist(calc);

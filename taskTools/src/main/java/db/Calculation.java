@@ -14,8 +14,8 @@ public class Calculation {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
    
-    private int number1;
-    private int number2;
+    private double number1;
+    private double number2;
     private String operation;
    
     public Calculation()
@@ -23,13 +23,13 @@ public class Calculation {
 
     }
      
-	public int getNumber1() {
+	public double getNumber1() {
 		return number1;
 	}
 	public void setNumber1(int number1) {
 		this.number1 = number1;
 	}
-	public int getNumber2() {
+	public double getNumber2() {
 		return number2;
 	}
 	public void setNumber2(int number2) {
